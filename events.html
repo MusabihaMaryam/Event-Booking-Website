@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Booking System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="calender/calender.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!"
+    />
+    <meta
+      name="keywords"
+      content="calendar, events, reminders, javascript, html, css, open source coding"
+    />
+    
+    
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- Adding the evo-calendar.css for styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"/>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.orange-coral.min.css">
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.royal-navy.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./demo/demo.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+
+
+
+
+   <script src="event.js" defer></script>
+  </head>
+  <body4>
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="index.html" class="logo">M&MS EVENTS</a>
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="bookings.html">Book Us</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+      </ul>
+
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
+      <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </nav>
+<!-- Event header -->
+<section class="hero-section">
+    <div class="content">
+      <h2>  We'd love to hear from you</h2>
+      <p>
+        Welcome to M&Ms Events, your premier partner for unforgettable experiences! Our team of expert event coordinators and planners specialize in crafting bespoke events that exceed your expectations. From corporate conferences to social gatherings, and from paid ticketed events to free community festivals, we bring people together and make memories that last. With attention to detail, creativity, and a passion for perfection, we deliver seamless and stress-free events that leave a lasting impression. Whether you're looking to inspire, educate, or simply entertain, M&Ms Events is dedicated to making your vision a reality.
+
+      </p>
+      <button> <a href="bookings.html">Book Us Now</a></button>
+    </div>
+  </section>
+ 
+    <!-- Review section -->
+     <section class="testimonials-section"><h2 class="testimonials-heading">Our Clients Testimonials!</h2>
+    </section>
+    
+    
+    <div class="wrapper">    
+        <div class="box">
+          <i class="fas fa-quote-left quote"></i>
+          <p>I was a bit overwhelmed by the crowds, but overall, I had a great time. The vendors had some amazing merchandise, and the panels were really informative. Would definitely come back. - Alex S.
+        </p>
+          <div class="content">
+            <div class="info">
+              <div class="name">Alex Smith</div>
+              <div class="job">Designer | Developer</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="image">
+              <img src="images/review 1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-quote-left quote"></i>
+          <p>I was a bit skeptical about the venue at first, but they really delivered. The cake was moist, the drinks were flowing, and the photo booth was a hit. Great job, guys! - Steven C.
+        </p>
+          <div class="content">
+            <div class="info">
+              <div class="name">Steven Chris</div>
+              <div class="job">YouTuber | Blogger</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="image">
+              <img src="images/review 3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-quote-left  quote"></i>
+          <p>I was really impressed by the quality of the speakers and the topics covered at this seminar. The venue was also super convenient and comfortable. Would definitely recommend to anyone in the industry. - Kristina B.
+        </p>
+          <div class="content">
+            <div class="info">
+              <div class="name">Kristina Bellis</div>
+              <div class="job">Freelancer | Advertiser</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="image">
+              <img src="images/review 2.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+<!--  -->
+<div class="wrapper">    
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>I had the pleasure of attending my friend's wedding at this venue and it was absolutely stunning! The decorations, the food, the music - everything was perfect. The staff were also super friendly and accommodating. 10/10 would recommend! - Emily R.
+
+    </p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Emily Rhodes</div>
+          <div class="job">Teacher </div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/review 4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>I was impressed by the organization and execution of this fundraiser. The speakers were passionate, the auction was exciting, and the food was delicious. I was happy to support a great cause and can't wait to do it again next year. - Mark Z
+    </p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Mark Zack Lee</div>
+          <div class="job">CEO | Marketer</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/review 6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left  quote"></i>
+      <p>I was blown away by the quality of the attendees at this networking event. The conversations were meaningful, the connections were valuable, and the atmosphere was professional. I left with a handful of new contacts and a renewed sense of purpose." Katy W.
+
+    </p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Katy Willson</div>
+          <div class="job">SEO | Content Creator</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/review 5.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  Pricing-->
+
+<section class="pricing-section">
+    <h2>Our Pricing</h2>
+</section>
+  
+<div class="content9">
+    
+
+    <div class="card one">
+      <div class="top">
+        <div class="title">Basic</div>
+        <div class="price-sec">
+          <span class="dollar">$</span>
+          <span class="price">299</span>
+          <span class="decimal">.99</span>
+        </div>
+      </div>
+      <div class="info">Limited features you will get on this package or plan</div>
+      <div class="details">
+        <div class="one">
+          <span>Event listing on our website
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span>Limited to 100 attendees
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span>1-hour consultation with an event expert
+        </span>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="one">
+          <span>Access to our event management software
+        </span>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="bookings.html">
+        <button>Purchase</button></a>
+      </div>
+    </div>
+    <div class="card two">
+      <div class="top">
+        <div class="title">Extended</div>
+        <div class="price-sec">
+          <span class="dollar">$</span>
+          <span class="price">1,499
+        </span>
+          <span class="decimal">.99</span>
+        </div>
+      </div>
+      <div class="info">Only some features you will get on this package or plan</div>
+      <div class="details">
+        <div class="one">
+          <span>Custom event page with photos, videos, and detailed description
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span>3-hour consultation with an event expert
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span>Unlimited attendees
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span> Access to our network of vendors and suppliers
+        </span>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="bookings.html">
+        <button>Purchase</button></a>
+      </div>
+    </div>
+    <div class="card three">
+      <div class="top">
+        <div class="title">Premium</div>
+        <div class="price-sec">
+          <span class="dollar">$</span>
+          <span class="price">2,999
+        </span>
+          <span class="decimal">.99</span>
+        </div>
+      </div>
+      <div class="info">All features you will get on this package or plan</div>
+      <div class="details">
+        <div class="one">
+          <span>Everything in the Premium plan
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span>Dedicated event manager
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span>Comprehensive event marketing package (social media, email marketing, etc.)
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="one">
+          <span>5-hour consultation with an event expert
+        </span>
+          <i class="fas fa-check"></i>
+        </div>
+        <a href="bookings.html">
+        <button>Purchase</button> </a>
+      </div>
+    </div>
+    </div>
+
+
+
+
+<!-- Event Pricings -->
+
+<section>
+    
+    <!-- Your section content here -->
+    <a id="check-availability-btn" href="calender/calender.html">Check Availability in Calendar</a>
+  </section>
+   <script src="calender/calender.js"></script>
+  
+  
+  </body4>
+</html>
